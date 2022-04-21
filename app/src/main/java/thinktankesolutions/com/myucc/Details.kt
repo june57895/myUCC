@@ -18,6 +18,7 @@ class Details : AppCompatActivity() {
         //Creates objects for each activity element
         val name: TextView = findViewById(R.id.tvName)
         val email: TextView = findViewById(R.id.tvEmail)
+
         val photo: ImageView = findViewById(R.id.ivProfile)
 
         //Assigns value to elements according to retrieved index

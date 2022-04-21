@@ -25,12 +25,24 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Method launches Social/IG activity
-       val web: ImageButton = findViewById(R.id.ibSocials)
+       val web: ImageButton = findViewById(R.id.ibSocials,)
         web.setOnClickListener{
             val intent = Intent(this, Social::class.java)
             startActivity(intent)
         }
-
+/*
+        //Method launches Social/facebook activity
+        val web: ImageButton = findViewById(R.id.ibSocial1)
+        web .setOnClickListener{
+            val intent = Intent(this, Social1::class.java)
+            startActivity(intent)
+        }
+//Method launches Social/twitter activity
+        val web: ImageButton = findViewById(R.id.ibSocial2)
+        web .setOnClickListener{
+            val intent = Intent(this, Social2::class.java)
+            startActivity(intent)
+        }*/
         //Launches device browser and loads specified URL
         val apply: ImageButton = findViewById(R.id.ibApply)
         apply.setOnClickListener {

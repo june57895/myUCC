@@ -11,22 +11,15 @@ import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 
-class Social : AppCompatActivity() {
+class Social2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_social)
 
+
         val web: WebView = findViewById(R.id.wvSocial)
-        web.webViewClient = CustomWebViewClient(this)
-        web.loadUrl("https://www.instagram.com/uccjamaica/")
-
-       /* val web: WebView = findViewById(R.id.wvSocial)
-        web.webViewClient = CustomWebViewClient(this)
-        web.loadUrl("https://www.facebook.com/uccjamaica/")*/
-
-        /* val web: WebView = findViewById(R.id.wvSocial)
-               web.webViewClient = CustomWebViewClient(this)
-               web.loadUrl("https://twitter.com/UCCjamaica")*/
+               web.webViewClient = CustomWebViewClient2(this)
+               web.loadUrl("https://twitter.com/UCCjamaica")
 
 
         val webSettings = web.settings
@@ -34,7 +27,7 @@ class Social : AppCompatActivity() {
     }
 }
 //Allows external website to load within WebView element
-class CustomWebViewClient internal constructor(private val activity: Activity) :
+class CustomWebViewClient2 internal constructor(private val activity: Activity) :
     WebViewClient() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun shouldOverrideUrlLoading(

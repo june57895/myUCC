@@ -1,5 +1,4 @@
 package thinktankesolutions.com.myucc
-
 import android.app.Activity
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -11,18 +10,14 @@ import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 
-class Social : AppCompatActivity() {
+class Social1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_social)
 
-        val web: WebView = findViewById(R.id.wvSocial)
-        web.webViewClient = CustomWebViewClient(this)
-        web.loadUrl("https://www.instagram.com/uccjamaica/")
-
-       /* val web: WebView = findViewById(R.id.wvSocial)
-        web.webViewClient = CustomWebViewClient(this)
-        web.loadUrl("https://www.facebook.com/uccjamaica/")*/
+        val web: WebView = findViewById(R.id.wvSocial1)
+         web.webViewClient = CustomWebViewClient1(this)
+         web.loadUrl("https://www.facebook.com/uccjamaica/")
 
         /* val web: WebView = findViewById(R.id.wvSocial)
                web.webViewClient = CustomWebViewClient(this)
@@ -34,7 +29,7 @@ class Social : AppCompatActivity() {
     }
 }
 //Allows external website to load within WebView element
-class CustomWebViewClient internal constructor(private val activity: Activity) :
+class CustomWebViewClient1 internal constructor(private val activity: Activity) :
     WebViewClient() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun shouldOverrideUrlLoading(
